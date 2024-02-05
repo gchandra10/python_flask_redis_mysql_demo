@@ -1,0 +1,6 @@
+.env
+config.yaml
+read_redis_hash.py
+_static/*
+_templates/*
+__pycache__/*
