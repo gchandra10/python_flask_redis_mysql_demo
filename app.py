@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+
 # import pymysql
 # import redis
 import time
@@ -14,11 +15,12 @@ api = Api(
     description="A simple API to demonstrate the power of RestAPI using Redis and MySQL",
 )
 
-#password = "helloworld"
+# password = "helloworld"
 
 # Establish database connections
 redis_conn = get_redis_connection()
 mysql_conn = get_mysql_connection()
+
 
 @api.route("/", methods=["GET"])
 class sakila(Resource):

@@ -31,6 +31,7 @@ config = load_config()
 #         ssl=True,
 #     )
 
+
 def get_redis_connection():
     """Create a Redis connection using the configuration.
 
