@@ -1,9 +1,12 @@
+## Config.yaml
+
+rename config.yaml.template to config.yaml
+
 ## Format the Code
 
-**pip install black**
-
 ```
-python3 -m black .
+ruff check .
+ruff format .
 ```
 
 ## Security Vulnerability Scanner
@@ -13,13 +16,13 @@ python3 -m black .
 ```
 bandit app.py
 bandit db_config.py
-bandir -r .
+bandit -r .
 ```
 
 ## Run the Web app
 
 ```
-python3 app.py
+poerty run python app.py
 ```
 
 ## Open Browser
@@ -67,7 +70,3 @@ http://127.0.0.1:8000/film/2/actors
 get film_2_actors
 
 ```
-
-
-<!-- pip install sphinx
-sphinx-quickstart docs -->

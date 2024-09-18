@@ -21,7 +21,6 @@ api = Api(
 redis_conn = get_redis_connection()
 mysql_conn = get_mysql_connection()
 
-
 @api.route("/", methods=["GET"])
 class sakila(Resource):
     def get():
